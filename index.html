@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Majestic Games</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0b1020;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 35px 15px;
+      background: linear-gradient(135deg, #762cff, #171b38);
+    }
+    header h1 { font-size: 34px; margin: 0 0 10px; }
+    header p { color: #e0d7ff; }
+    main { max-width: 900px; margin: auto; padding: 22px; }
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #1b2340;
+      border: 1px solid #353f65;
+      border-radius: 18px;
+      padding: 22px;
+    }
+    .art {
+      background: linear-gradient(135deg, #253d55, #472b75);
+      border-radius: 12px;
+      padding: 25px 5px;
+      text-align: center;
+      font-size: 52px;
+    }
+    .card p { color: #c7cde2; line-height: 1.5; }
+    button {
+      width: 100%;
+      padding: 13px;
+      background: #8b5cf6;
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer { text-align: center; padding: 25px; color: #aab2cc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👑 MAJESTIC GAMES 🎮</h1>
+    <p>Big adventures. Epic bosses. Your next favorite game.</p>
+  </header>
+
+  <main>
+    <h2>🎮 Game Library</h2>
+    <div class="games">
+      <article class="card">
+        <div class="art">🏰⚔️</div>
+        <h2>The Lost Kingdom v3</h2>
+        <p>Explore an enchanted forest, defeat the Bone Knight and Ember Dragon, and discover a new dimension!</p>
+        <button onclick="alert('Your game will be connected here next!')">
+          PLAY GAME
+        </button>
+      </article>
+
+      <article class="card">
+        <div class="art">❓✨</div>
+        <h2>Coming Soon</h2>
+        <p>More awesome browser games are on the way.</p>
+        <button onclick="alert('Stay tuned for the next game!')">
+          COMING SOON
+        </button>
+      </article>
+    </div>
+  </main>
+
+  <footer>© Majestic Games · Made for adventurers</footer>
+</body>
+</html>
